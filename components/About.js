@@ -1,40 +1,29 @@
 import Image from "next/image";
 import kongres from "images/kongres.jpg";
+import { useTranslation } from "next-i18next";
 export default function About() {
+  const { t } = useTranslation("about");
   return (
     <div className="relative bg-white">
       <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
         <div className="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
           <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Polska i TCM
+              {t("tytul1")}
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Praktyka i edukacja TCM w Polsce w ostatniej dekadzie rozwijają
-              się szybko. Szkoły TCM, które prowadzą wykłady z podstawowej i
-              zaawansowanej akupunktury oraz ziołolecznictwa, istnieją w wielu
-              głównych miastach: Krakowie, Katowicach, Wrocławiu, Poznaniu,
-              Gdańsku, Bydgoszczy, Warszawie. Kliniki i ośrodki medycyny
-              chińskiej są dostępne w większości regionów Polski i cieszą się
-              coraz większym zainteresowaniem tą formą medycyny.
-            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">{t("opis1")}</p>
 
             <p className="mt-4 text-xl font-bold tracking-tight text-gray-900 sm:text-xl">
-              Wycieczki
+              {t("tytul2")}
             </p>
             <p className="mt-6 text-base leading-8 text-gray-600">
-              Dla osób zainteresowanych zwiedzaniem średniowiecznego Krakowa lub
-              jego okolic, pomożemy w organizacji wycieczek po Krakowie i
-              Małopolsce, które są wpisane na listę Światowego Dziedzictwa
-              UNESCO - takie jak Kopalnia Soli w Wieliczce, Ojcowski Park
-              Narodowy, Pieniny, Zakopane czy Tatry.
+              {t("opis2")}
             </p>
             <p className="mt-4 text-xl font-bold tracking-tight text-gray-900 sm:text-xl">
-              Główne tematy
+              {t("tytul3")}
             </p>
             <p className="mt-6 text-base leading-8 text-gray-600">
-              Cykle życia. Wspieranie procesu przychodzenia i odchodzenia.
-              Immunologia i patogeny. Akupunktura klasyczna. Oczyszczanie ciała.
+              {t("opis3")}
             </p>
           </div>
         </div>
