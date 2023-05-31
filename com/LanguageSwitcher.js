@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 const LanguageSwitcher = () => {
   const router = useRouter();
@@ -15,14 +15,24 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => handleLanguageChange('en')}>
-        {t('English')}
-      </button>
-        <br/>
-      <button onClick={() => handleLanguageChange('pl')}>
-        {t('Polski')}
-      </button>
+    <div className="flex flex-1 justify-end">
+      {router.locale === "pl" ? (
+        <button
+          className="text font-semibold leading-6 text-gray-900"
+          onClick={() => handleLanguageChange("en")}
+        >
+          {t("English")}
+          <span aria-hidden="true">&rarr;</span>
+        </button>
+      ) : (
+        <button
+          className="text font-semibold leading-6 text-gray-900"
+          onClick={() => handleLanguageChange("pl")}
+        >
+          {t("Polski")}
+          <span aria-hidden="true">&rarr;</span>
+        </button>
+      )}
     </div>
   );
 };

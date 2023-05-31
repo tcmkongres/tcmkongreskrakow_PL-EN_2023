@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from "next/link";
+import { Inter } from "next/font/google";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+//import Link from "next/link";
 //components
-import LanguageSwitcher from "@/com/LanguageSwitcher";
-import MyComponent from "@/com/MyComponent";
+//import LanguageSwitcher from "@/com/LanguageSwitcher";
+//import MyComponent from "@/com/MyComponent";
 import Header from "@/components/Header";
 import Speakers from "@/components/Speakers";
 import { Schedule } from "@/components/Schedule";
@@ -16,44 +16,39 @@ import Hotel from "@/components/Hotel";
 import Koszyk from "@/components/Koszyk";
 import Timeline from "@/components/Timeline";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-<div>
-  {/*<LanguageSwitcher></LanguageSwitcher>*/}
-        <div className="bg-white">
-
-          <Header></Header>
-          <main>
-
-            {/*<About></About>*/}
-                    <LanguageSwitcher></LanguageSwitcher>
-            <Speakers></Speakers>
-            <Schedule></Schedule>
-            <Hotel></Hotel>
-            <Timeline></Timeline>
-            <Koszyk></Koszyk>
-            <Faqs></Faqs>
-            <Organizers></Organizers>
-            <Contact></Contact>
-          </main>
-          <Footer></Footer>
-        </div>
-</div>
-  )
+    <div>
+      <div className="bg-white">
+        <Header></Header>
+        <main>
+          <About></About>
+          <Speakers></Speakers>
+          <Schedule></Schedule>
+          <Hotel></Hotel>
+          <Timeline></Timeline>
+          <Koszyk></Koszyk>
+          <Faqs></Faqs>
+          <Organizers></Organizers>
+          <Contact></Contact>
+        </main>
+        <Footer></Footer>
+      </div>
+    </div>
+  );
 }
-
-
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
-        'common',
-          // 'dwa'
+        "common",
+        "header",
+        // 'dwa'
       ])),
       // Will be passed to the page component as props
     },
-  }
+  };
 }
