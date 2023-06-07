@@ -34,20 +34,6 @@ const tiers = [
     ],
     mostPopular: true,
   },
-  // {
-  //   name: "Bilet",
-  //   id: "3",
-  //   href: "https://app.easycart.pl/checkout/88568273/bilet-tcm2023?promo=1",
-  //   price: { monthly: "od 479 PLN" },
-  //   description: "Bilet wstępu na wykłady.",
-  //   features: [
-  //     "Dostęp do wszystkich wykładów przez 3 dni",
-  //     "Dostęp do warsztatów i paneli dyskusyjnych przez 3 dni",
-  //     "Dostęp do wszystkich wykładów w sekcji po pobrania",
-  //     "zniżki dla wybranych partnerów",
-  //   ],
-  //   mostPopular: false,
-  // },
 ];
 
 function classNames(...classes) {
@@ -116,9 +102,6 @@ export default function Pricing() {
                 <span className="text-4xl font-bold tracking-tight text-gray-900">
                   {tier.price[frequency.value]}
                 </span>
-                {/*<span className="text-sm font-semibold leading-6 text-gray-600">*/}
-                {/*  {frequency.priceSuffix}*/}
-                {/*</span>*/}
               </p>
               <a
                 href={tier.href}

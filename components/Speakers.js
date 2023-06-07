@@ -14,6 +14,7 @@ import Baik from "images/Baik.jpg";
 import Mietka from "images/Mietka.png";
 import Wojniusz from "images/Wojniusz.jpg";
 import Kalmus from "images/Kalmus.jpg";
+import { useTranslation } from "next-i18next";
 
 const people = [
   {
@@ -94,6 +95,7 @@ people.sort((a, b) =>
   a.name.localeCompare(b.name, "pl", { sensitivity: "base" })
 );
 export default function Speakers() {
+  const { t } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -102,10 +104,7 @@ export default function Speakers() {
             Nasi wykładowcy
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Mamy zaszczyt przedstawić nasz zespół wykładowców na nadchodzący
-            Kongres TCM w Krakowie. Wszyscy nasi prelegenci to doświadczeni
-            praktycy medycyny chińskiej, z solidnym tłem edukacyjnym i
-            praktycznym.
+            {t("tytul_Speakers")}
           </p>
         </div>
         <ul

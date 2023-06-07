@@ -47,6 +47,7 @@ export async function getStaticProps({ locale }) {
         "common",
         "header",
         "about",
+        "timeline",
         // 'dwa'
       ])),
       // Will be passed to the page component as props
