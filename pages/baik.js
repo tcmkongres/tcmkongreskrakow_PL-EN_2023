@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Baik from "images/Baik.jpg";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Page() {
-  const { t } = useTranslation('baik');
+  const { t } = useTranslation("baik");
+  const { t: tcommon } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -26,58 +27,18 @@ export default function Page() {
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Powrót do strony głównej
+                  {tcommon("back")}
                 </Link>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Jong Kook Baik
-                   {t('opis')}
+                {t("opis1")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Jong Kook Baik pochodzi z Korei Południowej, obecnie mieszka w
-                  Anglii. Jest wielokrotnie nagradzanym międzynarodowym
-                  wykładowcą specjalizującym się w systemach mikroakupunktury, w
-                  szczególności Koreańskiej Terapii Ręki (KHT).
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Jong studiował KHT na początku lat 90-tych w Korei
-                  Południowej, gdzie uzyskał dyplom w tym zakresie. Następnie
-                  przez cztery lata studiował w Northern College of Acupuncture
-                  w Yorku, w Wielkiej Brytanii, gdzie uzyskał dyplom z
-                  akupunktury. Studia magisterskie z akupunktury odbył na
-                  Uniwersytecie Walijskim, a doktorat z tradycyjnej medycyny
-                  chińskiej (Huangdi Neijing) na Uniwersytecie Walijskim w
-                  Lampeter. Doktorat ukończył pod kierunkiem renomowanego
-                  profesora Bao Zhao Ju na Liaoning University of Traditional
-                  Chinese Medicine, Shenyang,w Chinach.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  W 2016 roku otrzymał tytuł Doctor of Acupuncture nadany przez
-                  World Federation of Acupuncture and Moxibustion Societies
-                  (WFAS), Beijing, China. Następnie, w 2018 r., uzyskał tytuł
-                  Clinical Specialist in Acupuncture od Liaoning University of
-                  Traditional Chinese Medicine.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Jong przez 14 lat pracował jako część zespołu opieki
-                  paliatywnej w hospicjum w Darlington, a obecnie jest
-                  profesorem wizytującym w Southern California University School
-                  of Oriental Medicine and Acupuncture. Napisał kilka książek z
-                  zakresu tradycyjnej medycyny wschodnioazjatyckiej i
-                  współpracował z wieloma czasopismami.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Od 2005 roku Jong założył własną akademię, Jong Baik
-                  Education, z siedzibą w Darlington w Wielkiej Brytanii. Swój
-                  czas dzieli również na prowadzenie prężnie działającej kliniki
-                  w Darlington i wygłaszanie wykładów z wielu dziedzin na całym
-                  świecie.
-                </p>
+                <p className="mt-6">{t("opis2")}</p>{" "}
+                <p className="mt-6"> {t("opis3")}</p>{" "}
+                <p className="mt-6"> {t("opis4")}</p>{" "}
+                <p className="mt-6"> {t("opis5")}</p>{" "}
+                <p className="mt-6"> {t("opis6")}</p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
@@ -86,7 +47,7 @@ export default function Page() {
                 href="/download"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
-                Wykłady <span aria-hidden="true">&rarr;</span>
+                {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -98,22 +59,7 @@ export default function Page() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'pokrywka',
-        'olszowska',
-        'lapa',
-        'brejecka',
-        'chmielnicki',
-        'maimon',
-        'ayal',
-        'teixeira',
-        'jie',
-        'montakab',
-        'baik',
-        'mietka',
-        'wojniusz',
-        'kalmus',
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "baik"])),
     },
-  }
+  };
 }

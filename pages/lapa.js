@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Lapa from "images/Lapa.png";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Page() {
-  const { t } = useTranslation('lapa');
+  const { t } = useTranslation("lapa");
+  const { t: tcommon } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -26,41 +27,16 @@ export default function Page() {
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Powrót do strony głównej
+                  {tcommon("back")}
                 </Link>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Dorota Łapa
-                   {t('opis')}
+                {t("opis1")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Terapeutka Medycyny chinskiej, dietetyczka i akupunkturzystka.
-                </p>
-                <p className="mt-6">
-                  Współzałożycielka Centrum oraz Szkoły Naturalnego Odżywiania i
-                  Terapii Orkiszowe Pola w Poznaniu. Absolwentka pielęgniarstwa
-                  i dietetyki klasycznej, od 2007 roku kształci się̨ w medycynie
-                  chińskiej, podstawach ziołolecznictwa i medycynie św.
-                  Hildegardy, Od 2018 roku do pracy terapeutycznej włączyła
-                  zabiegi akupunktury wg klasycznego systemu.
-                </p>
-                <p className="mt-6">
-                  Na co dzień rozwiązuje problemy zdrowotne swoich pacjentów
-                  przy pomocy odżywiania, ziół i zabiegów, poszukując głęboko
-                  przyczyny choroby, zajmując się psychologicznymi ich
-                  uwarunkowaniami.Wydala 2 książki: Wy_dobrze_jecie czyli 150
-                  przepisów kuchni naturalnej i Wy-zdrowie_jecie czyli jak
-                  bezpiecznie i skutecznie przeprowadzić proces oczyszczania.
-                  Aktywna promocja zdrowia i zdrowego stylu życia poprzez
-                  działania edukacyjne przyświeca każdemu działaniu wykładowemu.
-                  od 12 tat wraz z Iwoną Kotowską prowadzi warsztaty
-                  oczyszczania dla osób, które pragną poprzez działania
-                  dietetyczne przywrócić́ równowagę̨ w swoim organizmie. Efektami
-                  tego wieloletniego doświadczenia w działaniach prozdrowtnych
-                  za pomocą Oczyszczania i wpływania na zdrowie Wątroby, pragnie
-                  się z Wami podzielić podczas zajęć na naszym Kongresie 2023.
-                </p>
+                <p className="mt-6">{t("opis2")}</p>
+                <p className="mt-6">{t("opis3")}</p>
+                <p className="mt-6">{t("opis4")}</p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
@@ -69,7 +45,7 @@ export default function Page() {
                 href="/download"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
-                Wykłady <span aria-hidden="true">&rarr;</span>
+                {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -81,22 +57,7 @@ export default function Page() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'pokrywka',
-        'olszowska',
-        'lapa',
-        'brejecka',
-        'chmielnicki',
-        'maimon',
-        'ayal',
-        'teixeira',
-        'jie',
-        'montakab',
-        'baik',
-        'mietka',
-        'wojniusz',
-        'kalmus',
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "lapa"])),
     },
-  }
+  };
 }

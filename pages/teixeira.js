@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Teixeira from "images/Teixeira.png";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Page() {
-  const { t } = useTranslation('teixeira');
+  const { t } = useTranslation("teixeira");
+  const { t: tcommon } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -26,47 +27,17 @@ export default function Page() {
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Powrót do strony głównej
+                  {tcommon("back")}
                 </Link>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Ricardo Teixeira
-                   {t('opis')}
+                {t("opis1")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Ricardo Texeira jest licencjonowanym akupunkturzystą, a także
-                  wiodącym specjalistą tradycyjnej medycyny chińskiej w
-                  Portugalii. Piastuje stanowisko vice prezesa ETCMA (European
-                  Traditional Chinese Medicine Association) – organizacji
-                  parasolowej dla stowarzyszeń zawodowych, które są powiązane z
-                  ponad 30 społecznościami z 21 krajów europejskich,
-                  reprezentujących różne wymiary tradycyjnej medycyny chińskiej.
-                  Profesor w Portugalskiej Północnej Szkole Zdrowia pod egidą
-                  Czerwonego Krzyża w zakresie studiów licencjackich z
-                  akupunktury. Jest również certyfikowanym trenerem w dziedzinie
-                  tradycyjnej medycyny chińskiej.
-                </p>{" "}
-                <p className="mt-6">
-                  Ricardo rozpoczął szkolenie z zakresu TMC w APA-DA
-                  (Portugalia) w 2003 r., w 2009 r. odbył staż w Chengdu
-                  University of Traditional Chinese Medicine, a kolejny w 2017
-                  r. w Meksyku u dr Roberto Gonzáleza. Ukończył studia
-                  podyplomowe w Instituto Van Nghi w Portugalii u dra Tran Viet
-                  Dzunga, a także różnorakie kursy z zakresu TMC.
-                </p>{" "}
-                <p className="mt-6">
-                  Ricardo był wielokrotnie zapraszany na liczne konferencje w
-                  Europie i Ameryce Południowej. Jest członkiem założycielem
-                  Światowej Organizacji Dnia Akupunktury (WADO) i wchodził w
-                  skład komitetu organizacyjnego Światowego Dnia Akupunktury
-                  przy siedzibie UNESCO w Paryżu.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Jest również licencjonowanym kardiopulmonologiem i
-                  neurofizjologiem.
-                </p>
+                <p className="mt-6">{t("opis2")}</p>{" "}
+                <p className="mt-6">{t("opis3")}</p>{" "}
+                <p className="mt-6">{t("opis4")}</p>{" "}
+                <p className="mt-6"> {t("opis5")}</p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
@@ -75,7 +46,7 @@ export default function Page() {
                 href="/download"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
-                Wykłady <span aria-hidden="true">&rarr;</span>
+                {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -87,22 +58,7 @@ export default function Page() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'pokrywka',
-        'olszowska',
-        'lapa',
-        'brejecka',
-        'chmielnicki',
-        'maimon',
-        'ayal',
-        'teixeira',
-        'jie',
-        'montakab',
-        'baik',
-        'mietka',
-        'wojniusz',
-        'kalmus',
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "teixeira"])),
     },
-  }
+  };
 }

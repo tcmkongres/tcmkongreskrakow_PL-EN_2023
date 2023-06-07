@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Maimon from "images/Maimon.png";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Page() {
-  const { t } = useTranslation('maimon');
+  const { t } = useTranslation("maimon");
+  const { t: tcommon } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -26,37 +27,16 @@ export default function Page() {
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Powrót do strony głównej
+                  {tcommon("back")}
                 </Link>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Yair Maimon
-                   {t('opis')}
+                {t("opis1")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Yair Maimon jest rozpoznawanym na całym świecie specjalistą w
-                  dziedzinie medycyny integracyjnej i chińskiej, z ponad
-                  30-letnim doświadczeniem klinicznym, akademickim i badawczym,
-                  zdobywanym w Stanach Zjednoczonych, Europie, Chinach i
-                  Izraelu.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Jest prezesem ETCMA – European TCM Association, stowarzyszenia
-                  reprezentującego rozsiane w 24. krajach zgrupowania TMC.
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Dr Maimon przez ponad 15 lat był dyrektorem oddziału medycyny
-                  komplementarnej w Centrum Medycznym w Tel Awiwie oraz kierował
-                  ośrodkiem badań nad integracyjną onkologią w Centrum Medycznym
-                  Sheba w Izraelu. Jest założycielem TCM Academy of integrative
-                  medicine (TCM.AC), gdzie był głównym wykładowcą. Prowadzi
-                  również podyplomowe seminaria szkoleniowe na wielu
-                  międzynarodowych konferencjach poświęconych medycynie
-                  integracyjnej i chińskiej.
-                </p>
+                <p className="mt-6">{t("opis2")}</p>{" "}
+                <p className="mt-6"> {t("opis3")}</p>{" "}
+                <p className="mt-6"> {t("opis4")}</p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
@@ -65,7 +45,7 @@ export default function Page() {
                 href="/download"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
-                Wykłady <span aria-hidden="true">&rarr;</span>
+                {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -77,23 +57,7 @@ export default function Page() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'pokrywka',
-        'olszowska',
-        'lapa',
-        'brejecka',
-        'chmielnicki',
-        'maimon',
-        'ayal',
-        'teixeira',
-        'jie',
-        'montakab',
-        'baik',
-        'mietka',
-        'wojniusz',
-        'kalmus',
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "maimon"])),
     },
-  }
+  };
 }
-

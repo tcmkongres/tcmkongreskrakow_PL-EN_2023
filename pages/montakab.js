@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Montakab from "images/Montakab.jpeg";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Page() {
-  const { t } = useTranslation('montakab');
+  const { t } = useTranslation("montakab");
+  const { t: tcommon } = useTranslation("common");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -26,38 +27,16 @@ export default function Page() {
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Powrót do strony głównej
+                  {tcommon("back")}
                 </Link>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Hamid Montakab
-                   {t('opis')}
+                {t("opis1")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Hamid Montakab ukończył studia medyczne w Paryżu, odbył staż z
-                  chirurgii, a także zdobył wykształcenie w zakresie akupunktury
-                  we Francji i w Chinach. Po praktyce w USA założył Akademię
-                  Chińskiej Sztuki Uzdrawiania w Szwajcarii. Na zlecenie
-                  Szwajcarskiej Narodowej Fundacji Nauki przeprowadził badania
-                  nad akupunkturą w kontekście bezsenności. W 1995 r. był
-                  współzałożycielem i prezesem Swiss Professional Organization
-                  for TCM (SPO-TCM).
-                </p>{" "}
-                <p className="mt-6">
-                  {" "}
-                  Hamid prowadzi liczne wykłady w Europie i USA, jest autorem
-                  następujących pozycji:
-                </p>{" "}
-                <p className="mt-6">
-                  • Acupuncture and Insomnia/ Sleep and Dreams in Chinese
-                  Medicine <br /> • Treasures of Acupuncture/ Acupuncture Point
-                  and Channel Energetics <br /> • Chinese Medicine Revisited / A
-                  Western View of Chinese Medicine [polskie wydanie: Medycyna
-                  chińska w praktyce, wyd. Galaktyka 2015) <br /> • Acupuncture
-                  for Headaches, Eyes and ENT Pathologies <br /> • Acupuncture
-                  for treating the Hidden Roots of Disease
-                </p>
+                <p className="mt-6">{t("opis2")}</p>{" "}
+                <p className="mt-6"> {t("opis3")}</p>{" "}
+                <p className="mt-6">{t("opis4")}</p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
@@ -66,7 +45,7 @@ export default function Page() {
                 href="/download"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
-                Wykłady <span aria-hidden="true">&rarr;</span>
+                {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -78,23 +57,7 @@ export default function Page() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'pokrywka',
-        'olszowska',
-        'lapa',
-        'brejecka',
-        'chmielnicki',
-        'maimon',
-        'ayal',
-        'teixeira',
-        'jie',
-        'montakab',
-        'baik',
-        'mietka',
-        'wojniusz',
-        'kalmus',
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "montakab"])),
     },
-  }
+  };
 }
-
