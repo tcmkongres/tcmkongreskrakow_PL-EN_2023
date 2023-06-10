@@ -1,4 +1,7 @@
-const faqs = [
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+
+const faqsPL = [
   {
     id: 1,
     question:
@@ -33,8 +36,44 @@ const faqs = [
   // More questions...
 ];
 
+const faqsEN = [
+  {
+    id: 1,
+    question: "Where will the Chinese medicine event in Krakow take place?",
+    answer:
+      "The event will take place at Galaxy Hotel, Gęsia 22A 31-535 Krakow",
+  },
+  {
+    id: 2,
+    question: "When will this event take place?",
+    answer:
+      "The event will take place on October 13-15, 2023. You can find the detailed schedule of the event on our website.",
+  },
+  {
+    id: 3,
+    question: "How can I register for the event?",
+    answer:
+      "To register, you need to buy a ticket available on the event's website. After purchasing a ticket, you will receive a registration confirmation to the provided email address.",
+  },
+  {
+    id: 4,
+    question: "Will there be an opportunity to buy tickets on site?",
+    answer:
+      "Unless the event is sold out in advance, tickets can be purchased on-site on the day the event starts. However, we recommend buying a ticket in advance to secure your spot.",
+  },
+  {
+    id: 5,
+    question: "Will there be translations into Polish at the event?",
+    answer:
+      "Yes, during the event all English-language lectures will be translated into Polish",
+  },
+  // More questions...
+];
 
-    export default function Faqs() {
+export default function Faqs() {
+  const router = useRouter();
+  const faqs = router.locale === "pl" ? faqsPL : faqsEN;
+  const { t } = useTranslation("common");
   return (
     <div className=" relative isolate">
       <div
@@ -52,10 +91,10 @@ const faqs = [
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Najczęściej zadawane pytania?
+            {t("tytul_faqs")}
           </h2>
           <p className="mt-6 text-base leading-7 text-gray-600">
-            Masz jakieś pytanie lub chcesz dowiedzieć się czegoś więcej? Napisz do nas na adres {" "}
+            {t("opis_faqs")}{" "}
             <a
               href="mailto:tcmkongres.kontakt@gmail.com"
               className="font-semibold text-indigo-600 hover:text-indigo-500"
@@ -63,7 +102,7 @@ const faqs = [
               tcmkongres.kontakt@gmail.com
             </a>
             {"."}
-            Odpowiemy najszybciej jak to możliwe. Poniżej zebraliśmy najczęściej zadawane pytania.
+            {t("opis_faqs2")}
           </p>
         </div>
         <div className="mt-20">

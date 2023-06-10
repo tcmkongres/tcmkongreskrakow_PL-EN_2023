@@ -21,5 +21,19 @@
   "telefon_Contact": "PHONE NUMBER",
   "email_Contact": "EMAIL",
   "tytul_Schedule": "Congress Program",
-  "opis_Schedule": "We present the Congress Program."
+  "opis_Schedule": "We present the Congress Program.",
+  "tytul_Koszyk": "Buy a ticket for the event",
+  "opis_Koszyk": "We have the following tickets for you. Standard ticket, discounted ticket, and special ticket. Discounted ticket - for ETCMA members, special ticket - for members of the Polish Society of Traditional Chinese Medicine (PTTMC)",
+  "kup_Koszyk": "Buy a ticket",
+  "tytul_Koszyk2": "Downloadable files",
+  "opis_Koszyk2": "On this page, you will find files to download. The files are available for everyone who purchased a ticket for the event.",
+  "go_Koszyk": "Go to the files",
+  "tytul_faqs": "Frequently asked questions?",
+  "opis_faqs": "Do you have a question or want to know more? Write to us at",
+  "opis_faqs2": "We will respond as soon as possible. Below we have collected the most frequently asked questions.",
+  "opis_Download": "On this page you will find all downloadable files related to our events.",
+  "opis_Download2": "Files from the previous congress.",
+  "opis_Download3": "Attachments",
+  "opis_Download4": "Download",
+  "opis_Download5": "Description"
 }

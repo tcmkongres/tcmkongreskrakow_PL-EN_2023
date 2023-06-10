@@ -1,9 +1,19 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 const navigation = {
   main: [
-    { name: "Regulamin TCM Kongres", href: "/regulations" },
-    { name: "Polityka prywatnosci", href: "/privacy" },
+    {
+      name: "Regulamin TCM Kongres",
+      nameEN: "TCM Congress Regulations",
+      href: "/regulations",
+    },
+    {
+      name: "Polityka prywatnosci",
+      nameEN: "Privacy Policy",
+      href: "/privacy",
+    },
   ],
   social: [
     {
@@ -36,6 +46,9 @@ const navigation = {
 };
 
 export default function Footer() {
+  const router = useRouter();
+
+  const { t } = useTranslation("common");
   return (
     <footer className="bg-gray-900" aria-labelledby="footer-heading">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -49,7 +62,7 @@ export default function Footer() {
                 href={item.href}
                 className="text-2xl leading-6 text-gray-600 hover:text-gray-900"
               >
-                {item.name}
+                {router.locale === "pl" ? item.name : item.nameEN}
               </Link>
             </div>
           ))}
@@ -61,7 +74,7 @@ export default function Footer() {
                 rel="noreferrer"
                 id="link"
               >
-                Pliki do pobrania
+                {t("tytul_Koszyk2")}
               </a>
             </Link>
           </div>
