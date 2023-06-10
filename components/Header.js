@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "@/com/LanguageSwitcher";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const { t } = useTranslation("header");
+  const router = useRouter();
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -55,7 +57,11 @@ export default function Header() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="https://app.easycart.pl/checkout/88568273/tcm-kongres-2023-ticket?promo=1"
+                    href={
+                      router.locale === "pl"
+                        ? "https://app.easycart.pl/checkout/88568273/tcm-kongres-2023-ticket?promo=1"
+                        : "https://cart.easy.tools/checkout/88568273/tcm-kongres-2023-ticket?promo=1"
+                    }
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     {t("bilet")} <span aria-hidden="true">→</span>

@@ -32,7 +32,7 @@ const tiersEN = [
   {
     name: "Banquet",
     id: "Banquet",
-    href: "https://app.easycart.pl/checkout/88568273/banquet-tcm2023",
+    href: "https://cart.easy.tools/checkout/88568273/bankiet-tcm2023",
     priceMonthly: "220 PLN",
     description: "Admission ticket for the banquet.",
     features: ["Possibility to participate in the banquet"],
@@ -40,7 +40,7 @@ const tiersEN = [
   {
     name: "Ticket",
     id: "Ticket",
-    href: "https://app.easycart.pl/checkout/88568273/tcm-congress-2023-ticket?promo=1",
+    href: "https://cart.easy.tools/checkout/88568273/tcm-kongres-2023-ticket?promo=1",
     priceMonthly: "from 407 PLN",
     description: "Admission ticket for the lectures.",
     features: [
