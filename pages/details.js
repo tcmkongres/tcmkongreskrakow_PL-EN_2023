@@ -406,6 +406,140 @@ const commentsEN = [
       "– Physiopathology, diagnostic and therapeutic principles\n" +
       "– Practical strategies: allergic rhinitis; allergic asthma.",
   },
+  {
+    id: 7,
+    name: "HAMID MONTAKAB",
+    imageUrl: Montakab,
+    // date: "14-10-2013",
+    title: "The Art of Aging Gracefully and Dying with Grace",
+    description:
+      "The cycles of life and the eight extraordinary vessels\n" +
+      "\n" +
+      "The eight extraordinary vessels encompass and regulate various stages of our development on physical, psychological, and mental levels.\n" +
+      "Similar to the seasons in nature, each stage of life has its own specific purpose.\n" +
+      'According to Taoist principles, each individual has a predetermined "Ming," which is a life mandate/program to fulfill.\n' +
+      "Lack of awareness of this Ming is the source of difficulties that most people experience in relation to\n" +
+      "the process of aging and dying. The extraordinary vessels help coordinate human psyche with\n" +
+      "natural physiological decline. Their application can be recommended to cope with the lack of\n" +
+      "acceptance and fear of aging.\n" +
+      "The secret to aging gracefully is to discover the meaning of autumn and winter in the cycles of life and\n" +
+      "to become aware of and embrace our spiritual dimension.\n" +
+      "Table of Contents:\n" +
+      "Four seasons of life\n" +
+      "Life mandate: Ming\n" +
+      "Jing and Shen cycles\n" +
+      "Extraordinary vessels in relation to different stages and transformations throughout life\n" +
+      "Difficulties related to aging: lack of acceptance of change; difficulties in letting go of the past\n" +
+      "and forgiveness; unfinished business; physical and mental weakening\n" +
+      "Fear of death\n" +
+      "The secret to aging gracefully and dying with grace: spiritual intelligence\n" +
+      "Selected acupuncture strategies.",
+  },
+  {
+    id: 8,
+    name: "DR LI JIE",
+    imageUrl: Jie,
+    // date: "14-10-2013",
+    title: "Ling Shu Jing Acupuncture: What and Why?",
+    description:
+      "Can acupuncture be used to treat all complex and difficult modern diseases? This\n" +
+      "question may often arise in many of us after studying or practicing acupuncture for\n" +
+      "some time. What did we miss and what do we still need to learn? Authentic, classical\n" +
+      "acupuncture.\n" +
+      "What is classical Ling Shu Jing acupuncture? Why do we need to study and practice it\n" +
+      "today? The following topics will be discussed in response to these questions:\n" +
+      'Ling Shu Jing Acupuncture is not "An Acupuncture" (anatomical acupuncture) but "I Acupuncture" (acupuncture of life information) - Ling Shu Jing Chapter 1.\n' +
+      "How were the meridians originally formed?\n" +
+      "The significance of the nature of the meridians and acupuncture, not their functions and actions.\n" +
+      "Acupuncture is a powerful therapy for treating Zang Fu diseases. How to combine acupuncture points according to meridians and pathological mechanisms?\n" +
+      "Pulse diagnosis as a guideline for treating Zang Fu diseases with acupuncture and for evaluating treatment in clinical practice.\n" +
+      "The application of Yin Yang Wu Xing theory in the clinic.\n" +
+      "Introduction to classical Jie Jing (meridian connections) and Ling Shu Jing - Geometric Acupuncture methods.\n" +
+      "Puncture methods - Ling Shu Jing Bu (tonifying) and Xie (reducing): What do they really mean? What does 'Bu' mean? What does 'Xie' mean?\n" +
+      "How to apply the principles of Ling Shu Jing acupuncture: 'For diseases in the upper aspect of the body, use lower points; for diseases in the lower aspect of the body, use upper points; for left-sided diseases, use right points; for right-sided diseases, use left points; for internal diseases, use the four lateral points.'",
+  },
+  {
+    id: 9,
+    name: "JONG BAIK",
+    imageUrl: Baik,
+    // date: "14-10-2013",
+    title:
+      "Korean Hand Therapy (KHT) for Gynecological Problems,\n" +
+      "Infertility, and Assisted Conception",
+    description:
+      "Gynecological problems and infertility from the perspective of Traditional East Asian Medicine (TEAM)\n" +
+      "Reproductive Jing and infertility\n" +
+      "Introduction to Korean acupuncture, acupressure, and hand moxibustion (KHT)\n" +
+      "Three main theories\n" +
+      "Possible underlying mechanisms of KHT\n" +
+      "Treatment techniques\n" +
+      "Research on KHT and gynecological disorders\n" +
+      "Key KHT points and recommended protocols\n" +
+      "Traditional East Asian Medicine (TEAM) has a long history of treating gynecological problems\n" +
+      "and infertility. There is abundant information on the pathology of diseases and women's health\n" +
+      "treatment. However, the TEAM perspective differs fundamentally from Western medicine.\n" +
+      "Korean Hand Therapy is a versatile and dynamic micro-acupuncture system that is\n" +
+      "easy to learn and easy to incorporate into clinical practice. It provides a practical and convenient\n" +
+      "treatment option as it is easily applicable for self-therapy.\n" +
+      "A number of studies on KHT have focused on gynecological disorders. The results of several\n" +
+      "suggest that KHT may be beneficial in alleviating premenstrual tension syndrome, menstrual\n" +
+      "associated symptoms, or menopause. Most of these studies were conducted using non-invasive\n" +
+      "treatment techniques such as moxibustion and acupressure pellets. Therefore, KHT appears to be\n" +
+      "a reasonable option to consider for women and individuals who have concerns about more\n" +
+      "invasive therapy.\n" +
+      "This presentation will explore gynecological problems and infertility from the perspective of\n" +
+      "Traditional East Asian Medicine. It will present the possibilities and advantages of KHT as a\n" +
+      "treatment option and highlight its versatility and well-defined theories. It will include key KHT\n" +
+      "points and recommended protocols.",
+  },
+  {
+    id: 10,
+    name: "JONG BAIK",
+    imageUrl: Baik,
+    // date: "14-10-2013",
+    title: "Introduction to the Three Treasures",
+    description:
+      "(10-minute presentation)\n" +
+      "Jing 精, Qi 氣, and Shen 神 are fundamental concepts underlying the two most important philosophical\n" +
+      "concepts of Traditional East Asian Medicine (TEAM): the holistic approach and the synthesis\n" +
+      "of body and mind. They have their distinguishing characteristics, but they cannot be completely separated.\n" +
+      "Jing, Qi, and Shen, which are the foundation of life, must be protected and nurtured if we want to achieve\n" +
+      "and maintain health and longevity.\n" +
+      "The value of the Three Treasures is invaluable in preventing, diagnosing, managing, and treating\n" +
+      "diseases. A deeper understanding of the Three Treasures will also lead to further refinement\n" +
+      "of existing TEAM theoretical systems and contribute to deepening our understanding of human physiology\n" +
+      "and pathology.",
+  },
+  {
+    id: 11,
+    name: "Dorota Łapa",
+    imageUrl: Lapa,
+    // date: "14-10-2013",
+    title:
+      "How to Cleanse with Diet for Individuals with Deficiencies?\n" +
+      "Cleansing Using the Fundamentals of Qi and Blood Strengthening in Chinese Medicine.",
+    description:
+      "I invite you to a lecture where I will share with you years of experience in conducting cleansing processes through diet.\n" +
+      "When I started using vegetable-based cleansing according to the indications and book by Dr. Renata Collier 12 years ago, like most of us who use knowledge from Chinese medicine, I knew primarily that this idea allows us to support the Qi of the spleen. Years of organizing workshops and conducting retreats have led me through experiences that have inspired me to refine and introduce various additional elements to this process, in order to better and more consciously deal with situations where fasting should be conducted by individuals with deficiencies in Yang, Qi, and Blood.\n" +
+      "I will present simple, ready-to-use procedures that I have probably developed based on methods you are already familiar with. Personally, by cooking and observing patients during each process, I have witnessed the effectiveness and healing properties that have supported the patients and taught them a healthier lifestyle.\n" +
+      "\n" +
+      "Based on my experience, I think I have safely guided the cleansing of around 800 individuals.\n" +
+      "\n" +
+      "Therefore, I invite you to listen and participate in the discussion during our Congress.",
+  },
+  {
+    id: 12,
+    name: "Bożena Olszowska",
+    imageUrl: Olszowska,
+    // date: "14-10-2013",
+    title: "CHINESE ART OF FACE READING - Discovering Everything Inside Out",
+    description:
+      "In Kiang Xiang (Chinese art of face reading), we find the concepts of Yin Yang, Five Elements, Five Mountains, the division into Three (Heaven, Human, Earth), 12 Palaces, and more.\n" +
+      "\n" +
+      "Ancient Chinese sages divided the face into a staggering number of sections. In these sections, we can find over 130 individual physical, psychological, emotional, and spiritual characteristics.\n" +
+      "\n" +
+      "Each face has its own story, and the Chinese art of face reading teaches how to interpret specific features, lines, wrinkles, and helps uncover previously unknown personality traits.",
+  },
 ];
 
 // comments.sort((a, b) =>

@@ -1,9 +1,5 @@
 import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-//import Link from "next/link";
-//components
-//import LanguageSwitcher from "@/com/LanguageSwitcher";
-//import MyComponent from "@/com/MyComponent";
 import Header from "@/components/Header";
 import Speakers from "@/components/Speakers";
 import { Schedule } from "@/components/Schedule";

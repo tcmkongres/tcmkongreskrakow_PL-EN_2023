@@ -34,6 +34,9 @@ const timeline = [
   },
 ];
 
+//todo: tutaj trzeba sokrzystac z tej tablicy timeline i ja odpowiednio uzyc. Tlumacznie tego na piechote jest
+// slabe i mi sie nie podoba. Trzeba to zrobic lepiej.
+
 export default function Timeline() {
   const { t } = useTranslation("timeline");
   return (

@@ -109,7 +109,6 @@ export default function Koszyk() {
                       <span className="text-5xl font-bold tracking-tight text-gray-900">
                         {tier.priceMonthly}
                       </span>
-                      {/*<span className="text-base font-semibold leading-7 text-gray-600">/month</span>*/}
                     </div>
                     <p className="mt-6 text-base leading-7 text-gray-600">
                       {tier.description}
