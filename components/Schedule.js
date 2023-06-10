@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
-const schedule = [
+const schedulePL = [
   {
     date: "Piątek",
     dateTime: "2023-10-13",
@@ -240,7 +242,243 @@ const schedule = [
   },
 ];
 
+const scheduleEN = [
+  {
+    date: "Friday",
+    dateTime: "2023-10-13",
+    summary: "Day 1.",
+    timeSlots: [
+      {
+        name: "Izabela Miętka",
+        description: "Welcome",
+        start: "10:00",
+        end: "10:10",
+      },
+      {
+        name: "Marek Kalmus",
+        description:
+          "Why shouldn't Chinese medicine resemble Western medicine?",
+        start: "10:10",
+        end: "10:40",
+      },
+      {
+        name: "Yair Maimon",
+        description: "Soon",
+        start: "10:40",
+        end: "11:40",
+      },
+      {
+        name: "Break",
+        description: null,
+        start: "11:40",
+        end: "12:00",
+      },
+      {
+        name: "Ricardo Teixeira ",
+        description: "Long-distance view: evolution of Shen over time.",
+        start: "12:00",
+        end: "12:30",
+      },
+      {
+        name: "Marta Nizioł-Wojniusz",
+        description:
+          "Trauma - broken connection: the role of Shao Yin in the context of trauma experience.",
+        start: "12:30",
+        end: "13:00",
+      },
+      {
+        name: "Izabela Miętka",
+        description: "Life cycles.",
+        start: "13:00",
+        end: "13:30",
+      },
+      {
+        name: "Lunch break",
+        description: null,
+        start: "13:30",
+        end: "15:00",
+      },
+      {
+        name: "Prof. Li Jie",
+        description: "Answers to difficult questions",
+        start: "14:30",
+        end: "14:50",
+      },
+      {
+        name: "Marta Nizioł - Izabela Miętka - Katarzyna Pokrywka",
+        description: "Women's issues - answers to difficult questions",
+        start: "14:20",
+        end: "14:50",
+      },
+      {
+        name: "Hamid Montakab",
+        description: "The art of aging gracefully and dying in grace",
+        start: "15:00",
+        end: "18:30",
+      },
+      {
+        name: "Bartosz Chmielnicki",
+        description:
+          "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
+        start: "15:00",
+        end: "18:30",
+      },
+      {
+        name: "Prof. Li Jie",
+        description: "Ling Shu Jing Acupuncture. What and why?",
+        start: "15:00",
+        end: "18:30",
+      },
+    ],
+  },
+  {
+    date: "Saturday",
+    dateTime: "2023-10-14",
+    summary: "Day 2.",
+    timeSlots: [
+      {
+        name: "Bożena Olszowska",
+        description: "Morning Qigong",
+        start: "7:30",
+        end: "8:15",
+      },
+      {
+        name: "Rani Ayal",
+        description: "Song of the Jade Dragon: 12 magical points",
+        start: "9:00",
+        end: "13:00",
+      },
+      {
+        name: "Jong Baik",
+        description:
+          "Korean Hand Therapy (KHT) for gynecological problems, infertility and assisted conception. Part 1",
+        start: "9:00",
+        end: "13:00",
+      },
+      {
+        name: "Ricardo Teixeira",
+        description: "Creative Hun. How does Hun influence our lives'",
+        start: "9:00",
+        end: "13:00",
+      },
+      {
+        name: "Dorota Łapa",
+        description:
+          "How to cleanse people with deficiencies through diet?\n" +
+          "Cleansing using the basics of strengthening Qi and Blood according to Chinese medicine.",
+        start: "9:00",
+        end: "13:00",
+      },
+      {
+        name: "Panel Rani Ayal - Yair Maimon",
+        description: "Answers to difficult questions",
+        start: "13:15",
+        end: "13:45",
+      },
+      {
+        name: "Dorota Łapa and Joanna Brejecka ",
+        description: "Answers to questions about herbs and diet.",
+        start: "13:15",
+        end: "13:45",
+      },
+      {
+        name: "Lunch break ",
+        description: null,
+        start: "13:45",
+        end: "15:00",
+      },
+      {
+        name: "Jong Baik",
+        description:
+          "Hand Therapy (KHT) for gynecological problems, infertility and assisted conception. Part 2 ",
+        start: "15:00",
+        end: "18:00",
+      },
+      {
+        name: "Hamid Montakab ",
+        description:
+          "Management of seasonal and chronic allergies in clinical practice",
+        start: "15:00",
+        end: "18:00",
+      },
+      {
+        name: "Yair Maimon",
+        description: "Regulation of the immune system in TCM",
+        start: "15:00",
+        end: "18:00",
+      },
+      {
+        name: "Banquet",
+        description: null,
+        start: "19:30",
+        end: "23:00",
+      },
+    ],
+  },
+  {
+    date: "Sunday",
+    dateTime: "2023-10-15",
+    summary: "Day 3.",
+    timeSlots: [
+      {
+        name: "Kasia Pokrywka ",
+        description:
+          "Acupuncture supporting in vitro fertilization process. Part 1",
+        start: "9:00",
+        end: "11:00",
+      },
+      {
+        name: "Joanna Brejecka- Pamungkas",
+        description:
+          "Chronic respiratory infections in children - patterns of pathology, western phytotherapy according to tcm, pediatric tuina. Part 1",
+        start: "9:00",
+        end: "11:00",
+      },
+      {
+        name: "Bożena Olszowska",
+        description:
+          "Chinese art of face reading - to see everything clearly. Part 1",
+        start: "9:00",
+        end: "11:00",
+      },
+      {
+        name: "Break",
+        description: null,
+        start: "11:00",
+        end: "12:00",
+      },
+      {
+        name: "Ricardo Teixeira ",
+        description: "Answers to difficult questions ",
+        start: "11:15",
+        end: "11:45",
+      },
+      {
+        name: "Kasia Pokrywka ",
+        description: "Acupuncture supporting in vitro fertilization process.",
+        start: "12:15",
+        end: "14:00",
+      },
+      {
+        name: "Joanna Brejecka- Pamungkas",
+        description:
+          "Chronic respiratory infections in children - patterns of pathology, western phytotherapy according to tcm, pediatric tuina.",
+        start: "12:15",
+        end: "14:00",
+      },
+      {
+        name: "Bożena Olszowska",
+        description: "Chinese art of face reading - to see everything clearly.",
+        start: "12:15",
+        end: "14:00",
+      },
+    ],
+  },
+];
+
 function ScheduleTabbed() {
+  const router = useRouter();
+  const schedule = router.locale === "pl" ? schedulePL : scheduleEN;
   let [tabOrientation, setTabOrientation] = useState("horizontal");
 
   useEffect(() => {
@@ -365,6 +603,8 @@ function TimeSlots({ day, className }) {
 }
 
 function ScheduleStatic() {
+  const router = useRouter();
+  const schedule = router.locale === "pl" ? schedulePL : scheduleEN;
   return (
     <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
       {schedule.map((day, index) => (
@@ -378,15 +618,16 @@ function ScheduleStatic() {
 }
 
 export function Schedule() {
+  const { t } = useTranslation("common");
   return (
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Program Kongresu
+            {t("tytul_Schedule")}
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Przedstawiamy program Kongresu.
+            {t("opis_Schedule")}
           </p>
         </div>
       </Container>

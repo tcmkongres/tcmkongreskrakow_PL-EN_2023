@@ -101,10 +101,10 @@ export default function Speakers() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Nasi wykładowcy
+            {t("tytul_Speakers1")}
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            {t("tytul_Speakers")}
+            {t("tytul_Speakers2")}
           </p>
         </div>
         <ul
