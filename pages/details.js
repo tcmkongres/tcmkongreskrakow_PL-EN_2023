@@ -1,8 +1,6 @@
 "use client";
 
-import { PaperClipIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
-import Script from "next/script";
 import Image from "next/image";
 import Pokrywka from "@/images/Pokrywka.jpeg";
 import Olszowska from "@/images/Olszowska.jpeg";
@@ -20,7 +18,6 @@ import Wojniusz from "@/images/Wojniusz.jpg";
 import Kalmus from "@/images/Kalmus.jpg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import SecondPage from "@/pages/dwa";
 import { useRouter } from "next/router";
 
 const commentsPL = [

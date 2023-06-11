@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
-const tiersPL = [
+const ticketPL = [
   {
     name: "Bankiet",
     id: "Bankiet",
@@ -28,7 +28,7 @@ const tiersPL = [
   },
 ];
 
-const tiersEN = [
+const ticketEN = [
   {
     name: "Banquet",
     id: "Banquet",
@@ -53,9 +53,9 @@ const tiersEN = [
   },
 ];
 
-export default function Koszyk() {
+export default function Shopping() {
   const router = useRouter();
-  const tiers = router.locale === "pl" ? tiersPL : tiersEN;
+  const tiers = router.locale === "pl" ? ticketPL : ticketEN;
   const { t } = useTranslation("common");
   return (
     <div className="isolate overflow-hidden bg-gray-900">

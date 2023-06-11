@@ -40,7 +40,7 @@ export default function Page() {
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
             <div className="mt-10 flex">
               <Link
-                href="/download"
+                href="/details"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
                 {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>

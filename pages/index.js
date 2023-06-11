@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Header from "@/components/Header";
 import Speakers from "@/components/Speakers";
@@ -9,10 +8,8 @@ import Contact from "@/components/Contact";
 import Organizers from "@/components/Organizers";
 import Faqs from "@/components/Faqs";
 import Hotel from "@/components/Hotel";
-import Koszyk from "@/components/Koszyk";
+import Shopping from "@/components/Shopping";
 import Timeline from "@/components/Timeline";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -25,7 +22,7 @@ export default function Home() {
           <Schedule></Schedule>
           <Hotel></Hotel>
           <Timeline></Timeline>
-          <Koszyk></Koszyk>
+          <Shopping></Shopping>
           <Faqs></Faqs>
           <Organizers></Organizers>
           <Contact></Contact>
@@ -44,7 +41,6 @@ export async function getStaticProps({ locale }) {
         "header",
         "about",
         "timeline",
-        // 'dwa'
       ])),
       // Will be passed to the page component as props
     },

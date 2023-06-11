@@ -2,7 +2,7 @@ import logo from "images/logo.png";
 import hero from "images/krakow-miasto.jpg";
 import Link from "next/link";
 import Image from "next/image";
-import LanguageSwitcher from "@/com/LanguageSwitcher";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
