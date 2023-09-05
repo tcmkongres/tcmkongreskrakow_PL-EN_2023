@@ -10,6 +10,7 @@ import Faqs from "@/components/Faqs";
 import Hotel from "@/components/Hotel";
 import Shopping from "@/components/Shopping";
 import Timeline from "@/components/Timeline";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <Shopping></Shopping>
           <Faqs></Faqs>
           <Organizers></Organizers>
+          <Sponsors></Sponsors>
           <Contact></Contact>
         </main>
         <Footer></Footer>
