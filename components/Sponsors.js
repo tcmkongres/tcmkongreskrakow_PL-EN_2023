@@ -12,7 +12,7 @@ export default function Sponsors() {
             {t("tytul_Sponsors")}
           </h2>
           <p className="mx-auto mt-6 text-lg leading-8 text-gray-600">
-            {t("opis_Sponsors")}
+            {/*{t("opis_Sponsors")}*/}
           </p>
           <Image className="" src={Baner} alt="" />
         </div>
