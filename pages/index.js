@@ -11,6 +11,7 @@ import Hotel from "@/components/Hotel";
 import Shopping from "@/components/Shopping";
 import Timeline from "@/components/Timeline";
 import Sponsors from "@/components/Sponsors";
+import Modal from "@/components/Modal";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <div className="bg-white">
         <Header></Header>
         <main>
+          <Modal></Modal>
           <About></About>
           <Speakers></Speakers>
           <Schedule></Schedule>
