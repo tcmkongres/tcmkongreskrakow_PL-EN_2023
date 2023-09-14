@@ -81,12 +81,18 @@ const schedulePL = [
         end: "18:30",
       },
       {
-        name: "Bartosz Chmielnicki",
-        description:
-          "Zimno i Gorąco – nieproszeni goście. Strategie Shang Han Lun i Wen Bing w walce z patogenami.",
+        name: "Yair Maimon",
+        description: "Regulowanie układu odpornościowego w TMC",
         start: "15:00",
-        end: "18:30",
+        end: "18:00",
       },
+      // {
+      //   name: "Bartosz Chmielnicki",
+      //   description:
+      //     "Zimno i Gorąco – nieproszeni goście. Strategie Shang Han Lun i Wen Bing w walce z patogenami.",
+      //   start: "15:00",
+      //   end: "18:30",
+      // },
       {
         name: "Prof. Li Jie",
         description: "Akupunktura Ling Shu Jing . Co i dlaczego?",
@@ -165,11 +171,18 @@ const schedulePL = [
         start: "15:00",
         end: "18:00",
       },
+      // {
+      //   name: "Yair Maimon",
+      //   description: "Regulowanie układu odpornościowego w TMC",
+      //   start: "15:00",
+      //   end: "18:00",
+      // },
       {
-        name: "Yair Maimon",
-        description: "Regulowanie układu odpornościowego w TMC",
+        name: "Bartosz Chmielnicki",
+        description:
+          "Zimno i Gorąco – nieproszeni goście. Strategie Shang Han Lun i Wen Bing w walce z patogenami.",
         start: "15:00",
-        end: "18:00",
+        end: "18:30",
       },
       {
         name: "Bankiet",
@@ -317,12 +330,18 @@ const scheduleEN = [
         end: "18:30",
       },
       {
-        name: "Bartosz Chmielnicki",
-        description:
-          "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
+        name: "Yair Maimon",
+        description: "Regulation of the immune system in TCM",
         start: "15:00",
-        end: "18:30",
+        end: "18:00",
       },
+      // {
+      //   name: "Bartosz Chmielnicki",
+      //   description:
+      //     "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
+      //   start: "15:00",
+      //   end: "18:30",
+      // },
       {
         name: "Prof. Li Jie",
         description: "Ling Shu Jing Acupuncture. What and why?",
@@ -402,11 +421,18 @@ const scheduleEN = [
         end: "18:00",
       },
       {
-        name: "Yair Maimon",
-        description: "Regulation of the immune system in TCM",
+        name: "Bartosz Chmielnicki",
+        description:
+          "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
         start: "15:00",
-        end: "18:00",
+        end: "18:30",
       },
+      // {
+      //   name: "Yair Maimon",
+      //   description: "Regulation of the immune system in TCM",
+      //   start: "15:00",
+      //   end: "18:00",
+      // },
       {
         name: "Banquet",
         description: null,
