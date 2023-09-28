@@ -12,48 +12,42 @@ const schedulePL = [
     summary: "Dzien 1.",
     timeSlots: [
       {
-        name: "Izabela Miętka",
+        name: "Sesja plenarna",
         description: "Powitanie",
         start: "10:00",
-        end: "10:10",
+        end: "10:15",
       },
       {
         name: "Marek Kalmus",
         description:
           "Dlaczego medycyna chińska nie powinna upodobaniać się do medycyny zachodniej?",
-        start: "10:10",
-        end: "10:40",
+        start: "10:15",
+        end: "10:45",
       },
       {
         name: "Yair Maimon",
-        description: "Wkrótce",
-        start: "10:40",
-        end: "11:40",
+        description: "Wszystko o łzach.",
+        start: "10:45",
+        end: "11:30",
       },
       {
         name: "Przerwa",
         description: null,
-        start: "11:40",
+        start: "11:30",
         end: "12:00",
-      },
-      {
-        name: "Ricardo Teixeira ",
-        description:
-          "Spojrzenie długodystansowe: ewolucja Shen na przestrzeni czasu.",
-        start: "12:00",
-        end: "12:30",
       },
       {
         name: "Marta Nizioł-Wojniusz",
         description:
           "Trauma – zerwane połączenie: rola Shao Yin w kontekście doświadczenia traumy.",
-        start: "12:30",
-        end: "13:00",
+        start: "12:00",
+        end: "12:45",
       },
       {
-        name: "Izabela Miętka",
-        description: "Cykle życia.",
-        start: "13:00",
+        name: "Ricardo Teixeira ",
+        description:
+          "Spojrzenie długodystansowe: ewolucja Shen na przestrzeni czasu.",
+        start: "12:45",
         end: "13:30",
       },
       {
@@ -71,8 +65,14 @@ const schedulePL = [
       {
         name: "Marta Nizioł - Izabela Miętka - Katarzyna Pokrywka",
         description: "Kobiece sprawy - odpowiedzi na trudne pytania",
-        start: "14:20",
+        start: "14:30",
         end: "14:50",
+      },
+      {
+        name: "Yair Maimon",
+        description: "Regulowanie układu odpornościowego w TMC",
+        start: "15:00",
+        end: "18:30",
       },
       {
         name: "Hamid Montakab",
@@ -80,19 +80,6 @@ const schedulePL = [
         start: "15:00",
         end: "18:30",
       },
-      {
-        name: "Yair Maimon",
-        description: "Regulowanie układu odpornościowego w TMC",
-        start: "15:00",
-        end: "18:00",
-      },
-      // {
-      //   name: "Bartosz Chmielnicki",
-      //   description:
-      //     "Zimno i Gorąco – nieproszeni goście. Strategie Shang Han Lun i Wen Bing w walce z patogenami.",
-      //   start: "15:00",
-      //   end: "18:30",
-      // },
       {
         name: "Prof. Li Jie",
         description: "Akupunktura Ling Shu Jing . Co i dlaczego?",
@@ -111,58 +98,58 @@ const schedulePL = [
         description: "Poranny Qigong",
         start: "7:30",
         end: "8:15",
+        place: "Taras",
       },
       {
         name: "Rani Ayal",
         description: "Pieśń Jadeitowego Smoka: 12 magicznych punktów",
         start: "9:00",
         end: "13:00",
+        place: "Sala A",
       },
       {
         name: "Jong Baik",
         description:
-          " Koreańska Terapia Dłoni (KHT) dla problemów ginekologicznych, niepłodności i wspomaganego zachodzenia w ciążę. Cz.1",
-        start: "9:00",
+          "Koreańska Terapia Dłoni (KHT) dla problemów ginekologicznych, niepłodności i wspomaganego zachodzenia w ciążę. Cz.1",
+        start: "9:30",
         end: "13:00",
+        place: "Sala B",
       },
       {
         name: "Ricardo Teixeira",
-        description: "Kreatywne Hun. W jaki sposób Hun wpływa na nasze życie'",
-        start: "9:00",
+        description: "Kreatywne Hun. W jaki sposób Hun wpływa na nasze życie",
+        start: "9:30",
         end: "13:00",
+        place: "Sala C",
       },
       {
         name: "Dorota Łapa",
         description:
-          "Jak oczyszczać dietą osoby z niedoborami?\n" +
-          "Oczyszczanie z wykorzystaniem podstaw wzmacniania Qi i Krwi wg medycyny chińskiej.",
-        start: "9:00",
+          "Jak oczyszczać dietą osoby z niedoborami? Oczyszczanie z wykorzystaniem podstaw wzmacniania Qi i Krwi wg medycyny chińskiej.",
+        start: "9:30",
         end: "13:00",
+        place: "Sala D",
       },
       {
         name: "Panel Rani Ayal - Yair Maimon",
         description: "Odpowiedzi na trudne pytania",
-        start: "13:15",
-        end: "13:45",
+        start: "13:10",
+        end: "13:30",
+        place: "Sala A",
       },
       {
-        name: "Dorota Łapa i Joanna Brejecka ",
+        name: "Dorota Łapa i Joanna Brejecka",
         description: "Odpowiedzi na pytania o zioła i dietę.",
-        start: "13:15",
-        end: "13:45",
+        start: "13:10",
+        end: "13:30",
+        place: "Sala D",
       },
       {
         name: "Przerwa obiadowa ",
         description: null,
-        start: "13:45",
+        start: "13:30",
         end: "15:00",
-      },
-      {
-        name: "Jong Baik",
-        description:
-          "Terapia Dłoni (KHT) dla problemów ginekologicznych, niepłodności i wspomaganego zachodzenia w ciążę. Cz.2 ",
-        start: "15:00",
-        end: "18:00",
+        place: "Sala B",
       },
       {
         name: "Hamid Montakab ",
@@ -170,25 +157,30 @@ const schedulePL = [
           "Postępowanie w alergiach sezonowych i przewlekłych w praktyce klinicznej",
         start: "15:00",
         end: "18:00",
+        place: "Sala A",
       },
-      // {
-      //   name: "Yair Maimon",
-      //   description: "Regulowanie układu odpornościowego w TMC",
-      //   start: "15:00",
-      //   end: "18:00",
-      // },
+      {
+        name: "Jong Baik",
+        description:
+          "Terapia Dłoni (KHT) dla problemów ginekologicznych, niepłodności i wspomaganego zachodzenia w ciążę. Cz.2",
+        start: "15:00",
+        end: "18:30",
+        place: "Sala B",
+      },
       {
         name: "Bartosz Chmielnicki",
         description:
           "Zimno i Gorąco – nieproszeni goście. Strategie Shang Han Lun i Wen Bing w walce z patogenami.",
         start: "15:00",
         end: "18:30",
+        place: "Sala C",
       },
       {
         name: "Bankiet",
         description: null,
         start: "19:30",
         end: "23:00",
+        place: "Taras",
       },
     ],
   },
@@ -198,7 +190,7 @@ const schedulePL = [
     summary: "Dzien 3.",
     timeSlots: [
       {
-        name: "Kasia Pokrywka ",
+        name: "Kasia Pokrywka",
         description:
           "Akupunktura wspierająca proces zapłodnienia in vitro. cz. 1",
         start: "9:00",
@@ -223,31 +215,26 @@ const schedulePL = [
         name: "Przerwa",
         description: null,
         start: "11:00",
-        end: "12:00",
-      },
-      {
-        name: "Ricardo Teixeira ",
-        description: "Odpowiedzi na trudne pytania ",
-        start: "11:15",
-        end: "11:45",
+        end: "12:15",
       },
       {
         name: "Kasia Pokrywka ",
-        description: "Akupunktura wspierająca proces zapłodnienia in vitro.",
+        description:
+          "Akupunktura wspierająca proces zapłodnienia in vitro. Cz. 2",
         start: "12:15",
         end: "14:00",
       },
       {
         name: "Joanna Brejecka- Pamungkas",
         description:
-          "Przewlekłe infekcje oddechowe u dzieci  - wzorce patologii, fitoterapia zachodnia wg tcm, tuina pediatryczna.",
+          "Przewlekłe infekcje oddechowe u dzieci - wzorce patologii, fitoterapia zachodnia wg tcm, tuina pediatryczna. Cz. 2",
         start: "12:15",
         end: "14:00",
       },
       {
         name: "Bożena Olszowska",
         description:
-          "Chińska sztuka czytania z twarzy - przejrzeć wszystko na wylot.",
+          "Chińska sztuka czytania z twarzy - przejrzeć wszystko na wylot. Cz. 2",
         start: "12:15",
         end: "14:00",
       },
@@ -262,47 +249,42 @@ const scheduleEN = [
     summary: "Day 1.",
     timeSlots: [
       {
-        name: "Izabela Miętka",
+        name: "Plenary session",
         description: "Welcome",
         start: "10:00",
-        end: "10:10",
+        end: "10:15",
       },
       {
         name: "Marek Kalmus",
         description:
           "Why shouldn't Chinese medicine resemble Western medicine?",
-        start: "10:10",
-        end: "10:40",
+        start: "10:15",
+        end: "10:45",
       },
       {
         name: "Yair Maimon",
-        description: "Soon",
-        start: "10:40",
-        end: "11:40",
+        description: "All about tears.",
+        start: "10:45",
+        end: "11:30",
       },
       {
         name: "Break",
         description: null,
-        start: "11:40",
+        start: "11:30",
         end: "12:00",
-      },
-      {
-        name: "Ricardo Teixeira ",
-        description: "Long-distance view: evolution of Shen over time.",
-        start: "12:00",
-        end: "12:30",
       },
       {
         name: "Marta Nizioł-Wojniusz",
         description:
-          "Trauma - broken connection: the role of Shao Yin in the context of trauma experience.",
-        start: "12:30",
-        end: "13:00",
+          "Trauma – broken connection: the role of Shao Yin in the context of experiencing trauma.",
+        start: "12:00",
+        end: "12:45",
       },
       {
-        name: "Izabela Miętka",
-        description: "Life cycles.",
-        start: "13:00",
+        name: "Ricardo Teixeira",
+        description:
+          "A long-distance perspective: the evolution of Shen over time.",
+        start: "12:45",
         end: "13:30",
       },
       {
@@ -319,29 +301,22 @@ const scheduleEN = [
       },
       {
         name: "Marta Nizioł - Izabela Miętka - Katarzyna Pokrywka",
-        description: "Women's issues - answers to difficult questions",
-        start: "14:20",
+        description: "Women's matters - answers to difficult questions",
+        start: "14:30",
         end: "14:50",
       },
       {
-        name: "Hamid Montakab",
-        description: "The art of aging gracefully and dying in grace",
+        name: "Yair Maimon",
+        description: "Regulating the immune system in TCM",
         start: "15:00",
         end: "18:30",
       },
       {
-        name: "Yair Maimon",
-        description: "Regulation of the immune system in TCM",
+        name: "Hamid Montakab",
+        description: "The art of aging gracefully and dying with grace",
         start: "15:00",
-        end: "18:00",
+        end: "18:30",
       },
-      // {
-      //   name: "Bartosz Chmielnicki",
-      //   description:
-      //     "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
-      //   start: "15:00",
-      //   end: "18:30",
-      // },
       {
         name: "Prof. Li Jie",
         description: "Ling Shu Jing Acupuncture. What and why?",
@@ -360,84 +335,89 @@ const scheduleEN = [
         description: "Morning Qigong",
         start: "7:30",
         end: "8:15",
+        place: "Terrace",
       },
       {
         name: "Rani Ayal",
         description: "Song of the Jade Dragon: 12 magical points",
         start: "9:00",
         end: "13:00",
+        place: "Room A",
       },
       {
         name: "Jong Baik",
         description:
-          "Korean Hand Therapy (KHT) for gynecological problems, infertility and assisted conception. Part 1",
-        start: "9:00",
+          "Korean Hand Therapy (KHT) for gynecological problems, infertility, and assisted conception. Part 1",
+        start: "9:30",
         end: "13:00",
+        place: "Room B",
       },
       {
         name: "Ricardo Teixeira",
-        description: "Creative Hun. How does Hun influence our lives'",
-        start: "9:00",
+        description: "Creative Hun. How Hun affects our life",
+        start: "9:30",
         end: "13:00",
+        place: "Room C",
       },
       {
         name: "Dorota Łapa",
         description:
-          "How to cleanse people with deficiencies through diet?\n" +
-          "Cleansing using the basics of strengthening Qi and Blood according to Chinese medicine.",
-        start: "9:00",
+          "How to detox people with deficiencies? Cleansing using the basics of strengthening Qi and Blood according to Chinese medicine.",
+        start: "9:30",
         end: "13:00",
+        place: "Room D",
       },
       {
         name: "Panel Rani Ayal - Yair Maimon",
         description: "Answers to difficult questions",
-        start: "13:15",
-        end: "13:45",
+        start: "13:10",
+        end: "13:30",
+        place: "Room A",
       },
       {
-        name: "Dorota Łapa and Joanna Brejecka ",
+        name: "Dorota Łapa and Joanna Brejecka",
         description: "Answers to questions about herbs and diet.",
-        start: "13:15",
-        end: "13:45",
+        start: "13:10",
+        end: "13:30",
+        place: "Room D",
       },
       {
-        name: "Lunch break ",
+        name: "Lunch break",
         description: null,
-        start: "13:45",
+        start: "13:30",
         end: "15:00",
+        place: "Room B",
+      },
+      {
+        name: "Hamid Montakab",
+        description:
+          "Approach to seasonal and chronic allergies in clinical practice",
+        start: "15:00",
+        end: "18:00",
+        place: "Room A",
       },
       {
         name: "Jong Baik",
         description:
-          "Hand Therapy (KHT) for gynecological problems, infertility and assisted conception. Part 2 ",
+          "Hand Therapy (KHT) for gynecological problems, infertility, and assisted conception. Part 2",
         start: "15:00",
-        end: "18:00",
-      },
-      {
-        name: "Hamid Montakab ",
-        description:
-          "Management of seasonal and chronic allergies in clinical practice",
-        start: "15:00",
-        end: "18:00",
+        end: "18:30",
+        place: "Room B",
       },
       {
         name: "Bartosz Chmielnicki",
         description:
-          "Cold and Hot – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
+          "Cold and Heat – uninvited guests. Shang Han Lun and Wen Bing strategies in the fight against pathogens.",
         start: "15:00",
         end: "18:30",
+        place: "Room C",
       },
-      // {
-      //   name: "Yair Maimon",
-      //   description: "Regulation of the immune system in TCM",
-      //   start: "15:00",
-      //   end: "18:00",
-      // },
       {
         name: "Banquet",
         description: null,
         start: "19:30",
         end: "23:00",
+        place: "Terrace",
       },
     ],
   },
@@ -447,23 +427,23 @@ const scheduleEN = [
     summary: "Day 3.",
     timeSlots: [
       {
-        name: "Kasia Pokrywka ",
+        name: "Kasia Pokrywka",
         description:
-          "Acupuncture supporting in vitro fertilization process. Part 1",
+          "Acupuncture supporting the in vitro fertilization process. Part 1",
         start: "9:00",
         end: "11:00",
       },
       {
         name: "Joanna Brejecka- Pamungkas",
         description:
-          "Chronic respiratory infections in children - patterns of pathology, western phytotherapy according to tcm, pediatric tuina. Part 1",
+          "Chronic respiratory infections in children - patterns of pathology, Western herbal therapy according to tcm, pediatric tuina. Part 1",
         start: "9:00",
         end: "11:00",
       },
       {
         name: "Bożena Olszowska",
         description:
-          "Chinese art of face reading - to see everything clearly. Part 1",
+          "Chinese art of face reading - to see through everything. Part 1",
         start: "9:00",
         end: "11:00",
       },
@@ -471,32 +451,81 @@ const scheduleEN = [
         name: "Break",
         description: null,
         start: "11:00",
-        end: "12:00",
+        end: "12:15",
       },
       {
-        name: "Ricardo Teixeira ",
-        description: "Answers to difficult questions ",
-        start: "11:15",
-        end: "11:45",
-      },
-      {
-        name: "Kasia Pokrywka ",
-        description: "Acupuncture supporting in vitro fertilization process.",
+        name: "Kasia Pokrywka",
+        description:
+          "Acupuncture supporting the in vitro fertilization process. Part 2",
         start: "12:15",
-        end: "14:00",
+        end: "13:15",
       },
       {
         name: "Joanna Brejecka- Pamungkas",
         description:
-          "Chronic respiratory infections in children - patterns of pathology, western phytotherapy according to tcm, pediatric tuina.",
+          "Chronic respiratory infections in children - patterns of pathology, Western herbal therapy according to tcm, pediatric tuina. Part 2",
         start: "12:15",
-        end: "14:00",
+        end: "13:15",
       },
       {
         name: "Bożena Olszowska",
-        description: "Chinese art of face reading - to see everything clearly.",
+        description:
+          "Chinese art of face reading - to see through everything. Part 2",
         start: "12:15",
-        end: "14:00",
+        end: "13:15",
+      },
+      {
+        name: "Lunch break",
+        description: null,
+        start: "13:15",
+        end: "14:45",
+      },
+      {
+        name: "Dorota Łapa",
+        description:
+          "A Chinese look at the causes of obesity and how to support weight loss using diet, acupuncture and herbal therapy. Part 1",
+        start: "14:45",
+        end: "16:45",
+      },
+      {
+        name: "Bożena Olszowska",
+        description:
+          "Chinese art of face reading - to see through everything. Part 3",
+        start: "14:45",
+        end: "16:45",
+      },
+      {
+        name: "Dr Anja Füchtenbusch",
+        description:
+          "How to properly diagnose and treat digestive disorders in dogs and cats. Part 1",
+        start: "14:45",
+        end: "16:45",
+      },
+      {
+        name: "Break",
+        description: null,
+        start: "16:45",
+        end: "17:00",
+      },
+      {
+        name: "Dorota Łapa",
+        description:
+          "A Chinese look at the causes of obesity and how to support weight loss using diet, acupuncture and herbal therapy. Part 2",
+        start: "17:00",
+        end: "18:00",
+      },
+      {
+        name: "Dr Anja Füchtenbusch",
+        description:
+          "How to properly diagnose and treat digestive disorders in dogs and cats. Part 2",
+        start: "17:00",
+        end: "18:00",
+      },
+      {
+        name: "Farewell",
+        description: null,
+        start: "18:00",
+        end: "18:15",
       },
     ],
   },
@@ -575,6 +604,7 @@ function Container({ className, ...props }) {
     />
   );
 }
+
 function DaySummary({ day }) {
   return (
     <>
@@ -597,33 +627,41 @@ function TimeSlots({ day, className }) {
         "space-y-8 bg-white/60 px-10 py-14 text-center shadow-xl shadow-blue-900/5 backdrop-blur"
       )}
     >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
-        <li
-          key={timeSlotIndex}
-          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
-        >
-          {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-          )}
-          <h4 className="text-lg font-semibold tracking-tight text-gray-900">
-            {timeSlot.name}
-          </h4>
-          {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-gray-600">
-              {timeSlot.description}
-            </p>
-          )}
-          <p className="mt-1 font-mono text-sm text-blue-500">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-              {timeSlot.start}
-            </time>{" "}
-            -{" "}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-              {timeSlot.end}
-            </time>{" "}
-          </p>
-        </li>
-      ))}
+      {day.timeSlots.map(
+        (timeSlot, timeSlotIndex) =>
+          console.log(timeSlot) || (
+            <li
+              key={timeSlotIndex}
+              aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
+            >
+              {timeSlotIndex > 0 && (
+                <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
+              )}
+              <h4 className="text-lg font-semibold tracking-tight text-gray-900">
+                {timeSlot.name}
+              </h4>
+              {timeSlot.description && (
+                <p className="mt-1 tracking-tight text-gray-600">
+                  {timeSlot.description}
+                </p>
+              )}
+              <p className="mt-1 font-mono text-sm text-blue-500">
+                <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
+                  {timeSlot.start}
+                </time>{" "}
+                -{" "}
+                <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
+                  {timeSlot.end}
+                </time>{" "}
+              </p>
+              {timeSlot.place && (
+                <p className="mt-1 tracking-tight text-gray-600">
+                  {timeSlot.place}
+                </p>
+              )}
+            </li>
+          )
+      )}
     </ol>
   );
 }

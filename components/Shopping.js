@@ -5,15 +5,21 @@ import { useRouter } from "next/router";
 
 const ticketPL = [
   {
-    name: "Bankiet",
+    name: "Bilety spacjalne",
     id: "Bankiet",
     href: "https://app.easycart.pl/checkout/88568273/bankiet-tcm2023",
-    priceMonthly: "220 PLN",
-    description: "Bilet wstepu na bankiet.",
-    features: ["Możliwość uczestnictwa w bankiecie"],
+    priceMonthly: "od 220 PLN",
+    description: "Bilet wstepu na dodatkowe wykłady",
+    features: [
+      "Możliwość uczestnictwa w bankiecie",
+      "Bilet na wyklad: Joanna Brejecka- Pamungkas\n" +
+        "Przewlekłe infekcje oddechowe u dzieci - wzorce patologii, fitoterapia zachodnia wg tcm, tuina pediatryczna. ",
+      "Bilet na wykład: Bożena Olszowska\n" +
+        "Chińska sztuka czytania z twarzy - przejrzeć wszystko na wylot.",
+    ],
   },
   {
-    name: "Bilet",
+    name: "Bilety na kongres",
     id: "Bilet",
     href: "https://app.easycart.pl/checkout/88568273/tcm-kongres-2023-ticket?promo=1",
     priceMonthly: "od 407 PLN",
@@ -23,32 +29,36 @@ const ticketPL = [
       "Dostęp do warsztatów i paneli dyskusyjnych w czasie trwanie kongresu",
       "Dostęp do wszystkich wykładów w sekcji po pobrania",
       "zniżki dla wybranych partnerów",
-      "PROMOCJA -15% zniżki promocja tylko do konca maja",
     ],
   },
 ];
 
 const ticketEN = [
   {
-    name: "Banquet",
+    name: "Special Tickets",
     id: "Banquet",
-    href: "https://cart.easy.tools/checkout/88568273/bankiet-tcm2023",
-    priceMonthly: "220 PLN",
-    description: "Admission ticket for the banquet.",
-    features: ["Possibility to participate in the banquet"],
+    href: "https://app.easycart.pl/checkout/88568273/bankiet-tcm2023",
+    priceMonthly: "from 220 PLN",
+    description: "Entrance ticket for additional lectures",
+    features: [
+      "Opportunity to participate in the banquet",
+      "Ticket for the lecture: Joanna Brejecka- Pamungkas\n" +
+        "Chronic respiratory infections in children - patterns of pathology, Western herbal therapy according to TCM, pediatric tuina.",
+      "Ticket for the lecture: Bożena Olszowska\n" +
+        "Chinese art of face reading - to see through everything.",
+    ],
   },
   {
-    name: "Ticket",
+    name: "Congress Tickets",
     id: "Ticket",
-    href: "https://cart.easy.tools/checkout/88568273/tcm-kongres-2023-ticket?promo=1",
+    href: "https://app.easycart.pl/checkout/88568273/tcm-kongres-2023-ticket?promo=1",
     priceMonthly: "from 407 PLN",
-    description: "Admission ticket for the lectures.",
+    description: "Entrance ticket for lectures.",
     features: [
       "Participation in lectures depending on the chosen ticket",
       "Access to workshops and discussion panels during the congress",
-      "Access to all lectures in the post-download section",
-      "Discounts for selected partners",
-      "PROMOTION -15% discount promotion only until the end of May",
+      "Access to all lectures in the download section",
+      "discounts for selected partners",
     ],
   },
 ];
