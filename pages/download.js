@@ -53,7 +53,7 @@ const Downloa = () => {
                   {t("opis_Download5")}
                 </dt>
                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                  {t("opis_Download2")}
+                  {/*{t("opis_Download2")}*/}
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -76,13 +76,153 @@ const Downloa = () => {
                             TCM_Kongres_Krakow_PL.pdf vol.2019
                           </span>
                           <span className="flex-shrink-0 text-gray-400">
-                            10.6 mb
+                            {/*10.6 mb*/}
                           </span>
                         </div>
                       </div>
                       <div className="ml-4 flex-shrink-0">
                         <a
                           href="https://tcm-kongres.pl/download/TCM_Kongres_Krakow_PL.pdf"
+                          download="TCM_Kongres_Krakow_PL.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                        >
+                          {t("opis_Download4")}
+                        </a>
+                      </div>
+                    </li>
+                    {/*asd*/}
+                    <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon
+                          className="h-5 w-5 flex-shrink-0 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <div className="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span className="truncate font-medium">
+                            aku wspierająca invitro kongres.pptx
+                          </span>
+                          <span className="flex-shrink-0 text-gray-400">
+                            {/*10.6 mb*/}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href="files/aku wspierająca invitro kongres.pptx"
+                          download="TCM_Kongres_Krakow_PL.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                        >
+                          {t("opis_Download4")}
+                        </a>
+                      </div>
+                    </li>
+                    {/*asd*/}
+                    <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon
+                          className="h-5 w-5 flex-shrink-0 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <div className="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span className="truncate font-medium">
+                            Materiały ivf Kasia Pokrywka.pdf
+                          </span>
+                          <span className="flex-shrink-0 text-gray-400">
+                            {/*10.6 mb*/}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href="files/Materiały ivf Kasia Pokrywka.pdf"
+                          download="TCM_Kongres_Krakow_PL.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                        >
+                          {t("opis_Download4")}
+                        </a>
+                      </div>
+                    </li>
+                    {/*asd*/}
+                    <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon
+                          className="h-5 w-5 flex-shrink-0 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <div className="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span className="truncate font-medium">
+                            Plan 2023_druk.pdf
+                          </span>
+                          <span className="flex-shrink-0 text-gray-400">
+                            {/*10.6 mb*/}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href="files/Plan 2023_druk.pdf"
+                          download="TCM_Kongres_Krakow_PL.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                        >
+                          {t("opis_Download4")}
+                        </a>
+                      </div>
+                    </li>
+                    {/*asd*/}
+                    <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon
+                          className="h-5 w-5 flex-shrink-0 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <div className="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span className="truncate font-medium">
+                            PowerPoint Presentation.pdf
+                          </span>
+                          <span className="flex-shrink-0 text-gray-400">
+                            {/*10.6 mb*/}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href="files/PowerPoint Presentation.pdf"
+                          download="TCM_Kongres_Krakow_PL.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                        >
+                          {t("opis_Download4")}
+                        </a>
+                      </div>
+                    </li>
+                    {/*asd*/}
+                    <li className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon
+                          className="h-5 w-5 flex-shrink-0 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <div className="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span className="truncate font-medium">
+                            TCM_Kongres_Krakow_PL.pdf vol.2023
+                          </span>
+                          <span className="flex-shrink-0 text-gray-400">
+                            {/*10.6 mb*/}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <a
+                          href="files/TCM Kongres Krakow 2023.pdf"
                           download="TCM_Kongres_Krakow_PL.pdf"
                           target="_blank"
                           rel="noreferrer"
