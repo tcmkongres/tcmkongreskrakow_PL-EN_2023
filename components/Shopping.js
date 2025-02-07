@@ -139,11 +139,12 @@ export default function Shopping() {
                     </ul>
                   </div>
                   <a
-                    href={tier.href}
+                    href={undefined} // Blokuje link
                     aria-describedby={tier.id}
-                    className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    onClick={(e) => e.preventDefault()} // Zatrzymuje kliknięcie
+                    className={`mt-8 block rounded-md px-3.5 py-2 text-center text-sm font-semibold leading-6 shadow-sm bg-gray-400 cursor-not-allowed opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                   >
-                    {t("kup_Koszyk")}
+                    tutaj {t("kup_Koszyk")}
                   </a>
                 </div>
               ))}

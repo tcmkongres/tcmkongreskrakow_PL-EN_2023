@@ -57,12 +57,9 @@ export default function Header() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href={
-                      router.locale === "pl"
-                        ? "https://app.easycart.pl/checkout/88568273/tcm-kongres-2023-ticket?promo=1"
-                        : "https://cart.easy.tools/checkout/88568273/tcm-kongres-2023-ticket?promo=1"
-                    }
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    href={undefined} // Link usunięty
+                    onClick={(e) => e.preventDefault()} // Zapobiega kliknięciu
+                    className="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-gray-400 cursor-not-allowed opacity-50 text-gray-200"
                   >
                     {t("bilet")} <span aria-hidden="true">→</span>
                   </a>
