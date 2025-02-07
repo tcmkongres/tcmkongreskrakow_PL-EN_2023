@@ -587,41 +587,38 @@ function TimeSlots({ day, className }) {
         "space-y-8 bg-white/60 px-10 py-14 text-center shadow-xl shadow-blue-900/5 backdrop-blur"
       )}
     >
-      {day.timeSlots.map(
-        (timeSlot, timeSlotIndex) =>
-          console.log(timeSlot) || (
-            <li
-              key={timeSlotIndex}
-              aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
-            >
-              {timeSlotIndex > 0 && (
-                <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-              )}
-              <h4 className="text-lg font-semibold tracking-tight text-gray-900">
-                {timeSlot.name}
-              </h4>
-              {timeSlot.description && (
-                <p className="mt-1 tracking-tight text-gray-600">
-                  {timeSlot.description}
-                </p>
-              )}
-              <p className="mt-1 font-mono text-sm text-blue-500">
-                <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-                  {timeSlot.start}
-                </time>{" "}
-                -{" "}
-                <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-                  {timeSlot.end}
-                </time>{" "}
-              </p>
-              {timeSlot.place && (
-                <p className="mt-1 tracking-tight text-gray-600">
-                  {timeSlot.place}
-                </p>
-              )}
-            </li>
-          )
-      )}
+      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+        <li
+          key={timeSlotIndex}
+          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
+        >
+          {timeSlotIndex > 0 && (
+            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
+          )}
+          <h4 className="text-lg font-semibold tracking-tight text-gray-900">
+            {timeSlot.name}
+          </h4>
+          {timeSlot.description && (
+            <p className="mt-1 tracking-tight text-gray-600">
+              {timeSlot.description}
+            </p>
+          )}
+          <p className="mt-1 font-mono text-sm text-blue-500">
+            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
+              {timeSlot.start}
+            </time>{" "}
+            -{" "}
+            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
+              {timeSlot.end}
+            </time>{" "}
+          </p>
+          {timeSlot.place && (
+            <p className="mt-1 tracking-tight text-gray-600">
+              {timeSlot.place}
+            </p>
+          )}
+        </li>
+      ))}
     </ol>
   );
 }
