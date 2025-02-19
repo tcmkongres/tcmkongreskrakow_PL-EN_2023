@@ -20,7 +20,7 @@ export default function Home() {
       <div className="bg-white">
         <Header></Header>
         <main>
-          <Modal></Modal>
+          {/*<Modal></Modal>*/}
           <About></About>
           <Speakers></Speakers>
           <Schedule></Schedule>
