@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Pokrywka from "@/public/images/Pokrywka.jpeg";
 import Olszowska from "@/public/images/Olszowska.jpeg";
@@ -124,7 +123,7 @@ export default function Speakers() {
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
         >
           {people.map((person) => (
-            <Link key={person.name} href={person.url}>
+            <a key={person.name} href={person.url}>
               <li>
                 <Image
                   className="aspect-[4/5] w-full rounded-2xl object-cover"
@@ -135,7 +134,7 @@ export default function Speakers() {
                   {person.name}
                 </h3>
               </li>
-            </Link>
+            </a>
           ))}
         </ul>
       </div>

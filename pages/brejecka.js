@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Brejecka from "@/public/images/Brejecka.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -23,12 +22,12 @@ export default function Page() {
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
               <p className="text-base font-semibold leading-7 mb-6 text-indigo-600">
-                <Link
+                <a
                   href="/"
                   className="rounded-md bg-gray-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   {tcommon("back")}
-                </Link>
+                </a>
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {t("opis1")}
@@ -42,12 +41,12 @@ export default function Page() {
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4"></dl>
             <div className="mt-10 flex">
-              <Link
+              <a
                 href="/details"
                 className="text-base font-semibold leading-7 text-indigo-600"
               >
                 {tcommon("link_wyklady")} <span aria-hidden="true">&rarr;</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

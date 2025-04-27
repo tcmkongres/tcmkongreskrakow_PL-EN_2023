@@ -1,5 +1,4 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
@@ -157,16 +156,17 @@ export default function Shopping() {
                     {t("opis_Koszyk2")}
                   </p>
                 </div>
-                <Link href="/download" legacyBehavior>
-                  <a
-                    className="rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    target="_blank"
-                    rel="noreferrer"
-                    id="link"
-                  >
-                    {t("go_Koszyk")} <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </Link>
+                {/*<Link href="/download" legacyBehavior>*/}
+                <a
+                  className="rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  target="_blank"
+                  rel="noreferrer"
+                  id="link"
+                  href="/download"
+                >
+                  {t("go_Koszyk")} <span aria-hidden="true">&rarr;</span>
+                </a>
+                {/*</Link>*/}
               </div>
             </div>
           </div>

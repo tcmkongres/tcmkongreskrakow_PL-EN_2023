@@ -1,6 +1,5 @@
 import logo from "@/public/images/logo.png";
 import hero from "@/public/images/krakow-miasto.jpg";
-import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "next-i18next";
@@ -18,20 +17,19 @@ export default function Header() {
               className="flex items-center justify-between lg:justify-start"
               aria-label="Global"
             >
-              <Link href="/" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">{t("tytul")}</span>
                 <Image
                   alt="Polskie Towarzystwo Tradycyjnej Medycyny Chińskiej"
                   className="h-26 w-auto"
                   src={logo}
                 />
-              </Link>
+              </a>
               <LanguageSwitcher></LanguageSwitcher>
             </nav>
           </div>
         </div>
       </header>
-
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">

@@ -58,25 +58,27 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6 text-center">
-              <Link
+              <a
                 href={item.href}
                 className="text-2xl leading-6 text-gray-600 hover:text-gray-900"
               >
                 {router.locale === "pl" ? item.name : item.nameEN}
-              </Link>
+              </a>
             </div>
           ))}
           <div className="pb-6 text-center">
-            <Link href="/download" legacyBehavior>
-              <a
-                className="text-2xl leading-6 text-gray-600 hover:text-gray-900"
-                target="_blank"
-                rel="noreferrer"
-                id="link"
-              >
-                {t("tytul_Koszyk2")}
-              </a>
-            </Link>
+            {/*todo: co to jest ??*/}
+            {/*<a href="/download">*/}
+            <a
+              className="text-2xl leading-6 text-gray-600 hover:text-gray-900"
+              target="_blank"
+              rel="noreferrer"
+              id="link"
+              href="/download"
+            >
+              {t("tytul_Koszyk2")}
+            </a>
+            {/*</a>*/}
           </div>
         </nav>
 
