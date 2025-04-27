@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Mietka from "images/Mietka.png";
+import Mietka from "@/public/images/Mietka.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

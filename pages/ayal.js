@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Ayal from "images/Ayal.png";
+import Ayal from "@/public/images/Ayal.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

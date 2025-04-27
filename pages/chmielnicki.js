@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Chmielnicki from "images/Chmielnicki.png";
+import Chmielnicki from "@/public/images/Chmielnicki.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

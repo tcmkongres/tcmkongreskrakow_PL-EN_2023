@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Jie from "images/Jie.png";
+import Jie from "@/public/images/Jie.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

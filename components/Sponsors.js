@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import Baner from "@/images/BannerPL_kongres.jpg";
+import Baner from "@/public/images/BannerPL_kongres.jpg";
 
 export default function Sponsors() {
   const { t } = useTranslation("common");

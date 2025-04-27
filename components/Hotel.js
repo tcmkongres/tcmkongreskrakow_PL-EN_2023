@@ -1,7 +1,7 @@
-import hotel1 from "images/hotel1.jpg";
-import hotel3 from "images/hotel3.jpg";
-import hotel2 from "images/hotel2.jpg";
-import hotel4 from "images/hotel4.jpg";
+import hotel1 from "@/public/images/hotel1.jpg";
+import hotel3 from "@/public/images/hotel3.jpg";
+import hotel2 from "@/public/images/hotel2.jpg";
+import hotel4 from "@/public/images/hotel4.jpg";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Brejecka from "images/Brejecka.png";
+import Brejecka from "@/public/images/Brejecka.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

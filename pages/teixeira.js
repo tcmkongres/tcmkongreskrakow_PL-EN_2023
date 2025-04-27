@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Teixeira from "images/Teixeira.png";
+import Teixeira from "@/public/images/Teixeira.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

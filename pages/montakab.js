@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Montakab from "images/Montakab.jpeg";
+import Montakab from "@/public/images/Montakab.jpeg";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

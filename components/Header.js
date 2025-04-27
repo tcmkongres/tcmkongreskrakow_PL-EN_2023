@@ -1,5 +1,5 @@
-import logo from "images/logo.png";
-import hero from "images/krakow-miasto.jpg";
+import logo from "@/public/images/logo.png";
+import hero from "@/public/images/krakow-miasto.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";

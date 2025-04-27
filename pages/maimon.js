@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Maimon from "images/Maimon.png";
+import Maimon from "@/public/images/Maimon.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

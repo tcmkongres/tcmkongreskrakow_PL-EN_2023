@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Pokrywka from "images/Pokrywka.jpeg";
+import Pokrywka from "@/public/images/Pokrywka.jpeg";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 

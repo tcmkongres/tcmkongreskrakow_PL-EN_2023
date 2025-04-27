@@ -1,13 +1,13 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import logo1 from "@/images/exhibitors/acuart_yb_logo_02.jpg";
-import logo2 from "@/images/exhibitors/logo-wystawcy.png";
-import logo3 from "@/images/exhibitors/logo cmc.jpg";
-import logo4 from "@/images/exhibitors/logoTOMO.jpg";
-import logo5 from "@/images/exhibitors/logo OP szkola naturalnego NEW-09.jpg";
-import logo6 from "@/images/exhibitors/Delewin logotyp.png";
-import logo7 from "@/images/exhibitors/TCM BOHEMIA_PNG.png";
-import logo8 from "@/images/exhibitors/TCMsklep-logo-czerwone-800x133px.png";
+import logo1 from "@/public/images/exhibitors/acuart_yb_logo_02.jpg";
+import logo2 from "@/public/images/exhibitors/logo-wystawcy.png";
+import logo3 from "@/public/images/exhibitors/logo cmc.jpg";
+import logo4 from "@/public/images/exhibitors/logoTOMO.jpg";
+import logo5 from "@/public/images/exhibitors/logo OP szkola naturalnego NEW-09.jpg";
+import logo6 from "@/public/images/exhibitors/Delewin logotyp.png";
+import logo7 from "@/public/images/exhibitors/TCM BOHEMIA_PNG.png";
+import logo8 from "@/public/images/exhibitors/TCMsklep-logo-czerwone-800x133px.png";
 
 export default function Exhibitors() {
   const { t } = useTranslation("common");

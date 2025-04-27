@@ -1,5 +1,5 @@
 import Image from "next/image";
-import kongres from "images/kongres.jpg";
+import kongres from "@/public/images/kongres.jpg";
 import { useTranslation } from "next-i18next";
 export default function About() {
   const { t } = useTranslation("about");

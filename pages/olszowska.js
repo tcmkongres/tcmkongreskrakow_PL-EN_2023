@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Olszowska from "images/Olszowska.jpeg";
+import Olszowska from "@/public/images/Olszowska.jpeg";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
