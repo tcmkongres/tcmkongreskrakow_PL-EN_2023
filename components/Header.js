@@ -4,6 +4,7 @@ import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Header() {
   const { t } = useTranslation("header");
@@ -23,14 +24,14 @@ export default function Header() {
               className="flex items-center justify-between lg:justify-start"
               aria-label="Global"
             >
-              <a href="/" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">{t("tytul")}</span>
                 <Image
                   alt="Polskie Towarzystwo Tradycyjnej Medycyny Chińskiej"
                   className="h-26 w-auto"
                   src={logo}
                 />
-              </a>
+              </Link>
               <LanguageSwitcher></LanguageSwitcher>
             </nav>
           </div>

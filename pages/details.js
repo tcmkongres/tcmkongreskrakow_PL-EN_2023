@@ -18,6 +18,7 @@ import Kalmus from "@/public/images/Kalmus.jpg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const commentsPL = [
   {
@@ -585,12 +586,12 @@ const Details = () => {
               // data-free="true"
               className="text-base font-semibold leading-7 mb-4 text-indigo-600"
             >
-              <a
+              <Link
                 href="/"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 {t("back")}
-              </a>
+              </Link>
             </p>
             <h2 className="text-base font-semibold leading-7 text-gray-900">
               Tematy na Kongresie
